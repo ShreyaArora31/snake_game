@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h> //console input output
-#include <windows.h> //to avoid flickering due to continous screen clear
+#include <windows.h> //to avoid flickering due to continous screen clear and for sleep function
 using namespace std;
 bool gameOver;
 const int width = 20;
