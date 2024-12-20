@@ -12,7 +12,6 @@ int Tail_len;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN};
 eDirection dir;
 
-
 void Setup(){
     gameOver = false;
     dir = STOP;
@@ -78,6 +77,18 @@ void Input(){
     }
 }
 void Logic(){
+    int prevX = tailX[0]; //head of tail
+    int prevY = tailY[0];
+    int prev2X, prev2Y;
+    for(int i = 1; i<Tail_len; i++)
+    {
+        prev2X = tailX[i];
+        prev2Y = tailY[i];
+        tailX[i] = prevX;
+        tailY[i] = prevY;
+        prevX = prev2X;
+        prevY = prev2Y;
+    }
     switch(dir){
         case LEFT:
         x--;
@@ -99,6 +110,7 @@ void Logic(){
         gameOver = true; //if we hit the wall
     if(x == fruitX && y == fruitY)
     {
+        Tail_len++;
         score +=10;
         fruitX = rand() % width; //random place from 0 to width-1
     fruitY = rand() % height;
