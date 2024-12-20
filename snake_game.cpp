@@ -42,9 +42,19 @@ void Draw(){
 
             else if(j==width-1)
                 cout<<"#";
-                else 
-            cout<<" ";
-            
+                else {
+                    bool print = false;
+                    for(int k =0 ; k< Tail_len; k++){
+                        
+                        if(tailX[k] == j && tailY[k] == i)
+                        {
+                            cout<< "o";
+                            print = true;
+                        }
+                    }
+                    if(!print)
+                    cout<<" ";  
+                }
             }
             cout<<"\n";
         }
