@@ -50,6 +50,7 @@ void Draw(){
     for(int i = 0; i<=width; i++)
         cout<<"#";
 cout<<"\n";
+cout<<"Score : "<<score<<"\n";
 }
 
 void Input(){
@@ -90,11 +91,14 @@ void Logic(){
         default:
         break;
     }
-    if(x == fruitX&& y = fruitY)
-    score +=10;
-    if(x>width || x<0 || y> height || y<0){
-        gameOver = true; //if we hit the wall
     
+    if(x>width || x<0 || y> height || y<0)
+        gameOver = true; //if we hit the wall
+    if(x == fruitX && y == fruitY)
+    {
+        score +=10;
+        fruitX = rand() % width; //random place from 0 to width-1
+    fruitY = rand() % height;
     }
 }
 int main(){
@@ -103,7 +107,7 @@ int main(){
         Draw();
         Input();
         Logic();
-        Sleep(100);
+        Sleep(200);//set difficulty level or the speed of snake
     }
     return 0;
 }
