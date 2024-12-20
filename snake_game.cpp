@@ -7,8 +7,11 @@ const int width = 20;
 const int height = 20;
 int x,y;
 int fruitX, fruitY, score;
+int tailX[100], tailY[100]; //max tail size as 100
+int Tail_len;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN};
 eDirection dir;
+
 
 void Setup(){
     gameOver = false;
