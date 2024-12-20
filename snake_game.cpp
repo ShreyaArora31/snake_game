@@ -120,6 +120,12 @@ void Logic(){
     
     if(x>width || x<0 || y> height || y<0)
         gameOver = true; //if we hit the wall
+    
+    for(int i =0; i< Tail_len;i++){
+        if(tailX[i] == x && tailY[i] == y)
+        gameOver = true;
+    }
+    
     if(x == fruitX && y == fruitY)
     {
         Tail_len++;
