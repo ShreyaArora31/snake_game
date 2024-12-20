@@ -90,6 +90,8 @@ void Logic(){
     int prevX = tailX[0]; //head of tail
     int prevY = tailY[0];
     int prev2X, prev2Y;
+    tailX[0] = x;
+    tailY[0] = y;
     for(int i = 1; i<Tail_len; i++)
     {
         prev2X = tailX[i];
