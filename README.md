@@ -4,20 +4,15 @@ A console-based Snake Game implemented in C++. The game allows the player to con
 <br>
 **Features**
 <br>
-*Bullet list
-**Snake Movement:** The snake can move left, right, up, or down using keyboard inputs.
+* **Snake Movement:** The snake can move left, right, up, or down using keyboard inputs.
 <br>
-* Bullet list item 2
-**Fruit Collection:** The snake eats the fruit (represented by "F"), which increases the score and length of the snake.
+* **Fruit Collection:** The snake eats the fruit (represented by "F"), which increases the score and length of the snake.
 <br>
-* Bullet list item 3
-**Screen Wrapping:** If the snake hits the boundary of the game area, it will wrap around to the opposite side.
+* **Screen Wrapping:** If the snake hits the boundary of the game area, it will wrap around to the opposite side.
 <br>
-* Bullet list item 4
-**Game Over Condition:** The game ends if the snake collides with its own body.
+* **Game Over Condition:** The game ends if the snake collides with its own body.
 <br>
-* Bullet list item 5
-**Score Tracking:** The current score is displayed on the screen.
+* **Score Tracking:** The current score is displayed on the screen.
 <br>
 
 **Controls**
