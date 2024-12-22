@@ -5,13 +5,9 @@ A console-based Snake Game implemented in C++. The game allows the player to con
 **Features**
 <br>
 - Snake Movement: The snake can move left, right, up, or down using keyboard inputs.
-<br>
 - Fruit Collection: The snake eats the fruit (represented by "F"), which increases the score and length of the snake.
-<br>
 - Screen Wrapping: If the snake hits the boundary of the game area, it will wrap around to the opposite side.
-<br>
 - Game Over Condition: The game ends if the snake collides with its own body.
-<br>
 - Score Tracking: The current score is displayed on the screen.
 <br>
 
