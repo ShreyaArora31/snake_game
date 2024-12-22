@@ -10,7 +10,7 @@ A console-based Snake Game implemented in C++. The game allows the player to con
 - Game Over Condition: The game ends if the snake collides with its own body.
 - Score Tracking: The current score is displayed on the screen.
 <br>
-<br>
+
 **Controls**
 <br>
 W: Move Up
@@ -23,14 +23,14 @@ D: Move Right
 <br>
 X: Exit the game
 <br>
-<br>
+
 **Requirements**
 <br>
 C++ Compiler (e.g., GCC, Clang, or MSVC)
 <br>
 Windows OS (for console-related functions like system("cls") and SetConsoleCursorPosition())
 <br>
-<br>
+
 **Code Explanation**
 <br>
 *Key Variables*
