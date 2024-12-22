@@ -23,14 +23,14 @@ D: Move Right
 <br>
 X: Exit the game
 <br>
-
+<br>
 **Requirements**
 <br>
 C++ Compiler (e.g., GCC, Clang, or MSVC)
 <br>
 Windows OS (for console-related functions like system("cls") and SetConsoleCursorPosition())
 <br>
-
+<br>
 **Code Explanation**
 <br>
 *Key Variables*
