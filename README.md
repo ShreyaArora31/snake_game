@@ -73,4 +73,4 @@ The game logic is updated (snake movement, collision checks, etc.).
 <br>
 The program sleeps for a short time (adjustable for difficulty level).
 
-![alt text](Screenshot 2025-04-13 183831.png)
+![alt text](image1.png)
